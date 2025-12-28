@@ -1,6 +1,7 @@
+import PHOTO from "../assets/PHOTO.jpeg";
 function Hero() {
   return (
-    <section className="py-16 px-6">
+    <section id="home" className="pt-24 py-16 px-6">
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 items-center md:items-start">
         
         {/* LEFT COLUMN */}
@@ -30,7 +31,12 @@ function Hero() {
         {/* RIGHT COLUMN */}
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="w-48 h-48 bg-gray-200 rounded-xl flex items-center justify-center text-gray-500">
-            Image Here
+            <img
+            src={PHOTO}
+            alt="Anushka"
+            className="w-48 h-48 object-cover rounded-xl"
+/>
+
           </div>
         </div>
 
