@@ -1,3 +1,4 @@
+import FadeInSection from "./FadeInSection";
 import ProjectCard from "./ProjectCard";
 
 function Projects() {
@@ -17,7 +18,8 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-16 px-6">
+    <section id="projects" className="min-h-screen pt-24 px-6 flex items-ceneter snap-start bg-white">
+      <FadeInSection>
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-center">
           Projects
@@ -39,6 +41,7 @@ function Projects() {
           ))}
         </div>
       </div>
+      </FadeInSection>
     </section>
   );
 }
